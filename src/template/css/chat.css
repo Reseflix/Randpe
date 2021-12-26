@@ -1,0 +1,183 @@
+html, body {
+    margin:0 auto;
+    width:100%;
+    height:100%;
+    display:flex;
+
+
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-image:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d79c67a8-7603-46e4-b56f-fb9967f82eb2/debqlqh-e16d6b49-becb-430a-a9cb-258cd382cbca.jpg/v1/fill/w_1280,h_720,q_75,strp/black_mountains_dark_theme_wallpapers_by_mayankgorecha_debqlqh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZDc5YzY3YTgtNzYwMy00NmU0LWI1NmYtZmI5OTY3ZjgyZWIyXC9kZWJxbHFoLWUxNmQ2YjQ5LWJlY2ItNDMwYS1hOWNiLTI1OGNkMzgyY2JjYS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.zWTmfYJc66Y81eVdi-jIzAV2YQSihmuAIsvrPhAPkwU");
+}
+
+#menu {
+    position:static;
+    width:400px;
+    min-width:400px;
+    max-width:400px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+}
+
+#menu::before {
+    content:"";
+    position:absolute;
+    width:inherit;
+    height:inherit;
+    border-radius:5px;
+    background-color: rgba(255, 255, 255, .1);  
+    backdrop-filter: blur(5px);
+}
+
+#menu-header {
+    position:relative;
+    width:95%;
+    height:50px;
+    background-color:#3d405b;
+    top:10px;
+    left:50%;
+    transform:translate(-50%);
+    border-radius:5px;
+    display:flex;
+    border-right:5px solid white;
+}
+
+#menu-header input {
+    border:none;
+    background-color:transparent;
+    color:white;
+    width:100%;
+    height:100%;
+    z-index:2;
+    padding-left:15px;
+}
+
+#menu-header input::placeholder {
+    font-weight:bolder;
+    color:white;
+}
+
+#menu-header input:focus{
+    outline: none;
+}
+
+#menu-section {
+    width:100%;
+    height:100%;
+    margin-top:25px;
+    overflow:hidden;
+    overflow-y:scroll;
+}
+
+#menu-section::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: transparent;
+}
+
+#menu-section .people {
+    color:white;
+    position:relative;
+    left:50%;
+    transform:translate(-50%);
+    width:97%;
+    height:70px;
+    border-radius:5px;
+    margin:15px 0;
+    overflow:hidden;
+    display:flex;
+    transition:all 0.5s;
+    background-color: rgba(255, 255, 255, .05);  
+    cursor: pointer;
+}
+
+#menu-section .people:hover {
+    box-shadow:0 0 10px black;
+}
+
+#menu-section .newme {
+    width:90%;
+}
+#menu-section .newme::after {
+    content:attr(quant);
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:bolder;
+    font-size:20px;
+    position:absolute;
+    right:0px;
+    width:37px;
+    height:inherit;
+    background:#99d98c;
+    border-radius:5px;
+}
+
+#menu-section .pic {
+    width:70px;
+    height:100%;
+    z-index:1;
+    border-radius:5px;
+}
+
+#menu-section .pic img {
+    height:100%;
+}
+
+#menu-section .actived {
+    background-color: rgba(59, 27, 22, 0.05);
+    border:1px solid black;
+}
+
+.info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+#peoplepic {
+    color:white;
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:70px;
+    height:80px;
+    overflow:hidden;
+    border-radius:5px;
+}
+#peoplepic img {
+    width:inherit;
+}   
+
+#chat {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    bottom:0;
+    width:100%;
+    height:100%;
+    justify-content: flex-end;
+}
+.content {
+    margin:5px;
+    padding:7px;
+    border-radius: 5px;
+    
+}
+.receive {
+    background-color: #99d98c;
+    float:left;
+}
+.send {
+    background-color: #61a15a;
+    float:right;
+}

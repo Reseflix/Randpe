@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RandPe: Chat</title>
+        <link rel="stylesheet" href="css/chat.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js" integrity="sha512-nYuHvSAhY5lFZ4ixSViOwsEKFvlxHMU2NHts1ILuJgOS6ptUmAGt/0i5czIgMOahKZ6JN84YFDA+mCdky7dD8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/chat.js"></script>
+        <script src="js/randpe.js"></script>
+    </head>
+    <body>
+        <div id="menu">
+            <div id="menu-header">
+              <input autocomplete="off" id="search" placeholder="Pesquisar..." onkeypress="filter()" onchange="filter()" onfocusout="filter()">
+            </div>
+            <div id="menu-section">
+            </div>
+          </div>
+          <section id="content">
+            <div id="peoplepic">
+              <img src="">
+              <p>RandPe</p>
+            </div>
+            <div id="chat">
+            </div>
+            <div id="write"></div>
+          </section>
+    </body>
+</html>

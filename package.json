@@ -1,0 +1,22 @@
+{
+  "name": "RandPe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mon": "nodemon src/server.js",
+    "mont": "nodemon srct/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^7.0.0-alpha.2",
+    "socket.io": "^4.4.0"
+  }
+}
