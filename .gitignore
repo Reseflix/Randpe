@@ -77,3 +77,6 @@ typings/
 
 # Middleware
 src/middle
+
+# test
+src/test.js
